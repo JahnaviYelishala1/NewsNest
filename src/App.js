@@ -30,7 +30,7 @@ export default class App extends Component {
             height={3}
             color="#f11946"
             progress={this.state.progress}
-            onLoaderFinished={() => this.setProgress(0)} // ✅ Fixed this line
+            onLoaderFinished={() => this.setProgress(0)} 
           />
           <Routes>
             <Route path="/" element={<News setProgress={this.setProgress} key="general" pagesize={5} category="general" />} />

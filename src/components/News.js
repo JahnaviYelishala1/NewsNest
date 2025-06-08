@@ -29,7 +29,7 @@ export class News extends Component {
   async componentDidMount() {
     this.props.setProgress(10);
     this.setState({ loading: true });
-    const newsUrl = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=69b655abc256490198639ff9ecc84829&page=1&pageSize=${this.props.pageSize}`;
+    const newsUrl = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=${process.env.REACT_APP_NEWS_API_KEY}&page=1&pageSize=${this.props.pageSize}`;
     let data = await fetch(newsUrl);
     let parsedData = await data.json();
     this.setState({
@@ -45,7 +45,7 @@ export class News extends Component {
     // Use callback version to get correct updated page number
     this.setState(async (prevState) => {
       const nextPage = prevState.page + 1;
-      const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=69b655abc256490198639ff9ecc84829&page=${nextPage}&pageSize=${this.props.pageSize}`;
+      const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=${process.env.REACT_APP_NEWS_API_KEY}&page=${nextPage}&pageSize=${this.props.pageSize}`;
       let data = await fetch(url);
       let parsedData = await data.json();
       return {
