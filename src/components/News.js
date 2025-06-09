@@ -31,7 +31,7 @@ export class News extends Component {
     this.setState({ loading: true });
      const url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=${process.env.REACT_APP_NEWS_API}&page=1&pageSize=${this.props.pageSize}`;
 
-    let data = await fetch(newsUrl);
+    let data = await fetch(url);
     let parsedData = await data.json();
     this.setState({
       articles: parsedData.articles || [],
