@@ -7,9 +7,9 @@ NewsNest is a modern and responsive single-page React application that fetches a
 ## 📸 Screenshots
 
 <!-- Replace the image paths with your actual screenshot file paths or hosted URLs -->
-<img src="C:\Users\Jahnavi\OneDrive\图片\Screenshots\Screenshot 2025-06-09 212058.png" width="600" alt="Homepage" />
-<img src="C:\Users\Jahnavi\OneDrive\图片\Screenshots\Screenshot 2025-06-09 212132.png" width="600" alt="Business News" />
-<img src="C:\Users\Jahnavi\OneDrive\图片\Screenshots\Screenshot 2025-06-09 212206.png" width="300" alt="Mobile View" />
+<img src="screenshots/image3.png" width="600" alt="Homepage" />
+<img src="screenshots/image2.png" width="600" alt="Business News" />
+<img src="screenshots/image1.png" width="300" alt="Mobile View" />
 
 ---
 
